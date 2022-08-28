@@ -21,8 +21,8 @@ function Header({ onClickFn, sortState }) {
         {addSortMark("account")} Account
       </div>
 
-      <div className='cash__container grey-bck'>
-        <article className='cash medium' onClick={onClickFn}>
+      <div className='cash__container grey-bck' onClick={onClickFn}>
+        <article className='cash medium'>
           {addSortMark("cash")} Available Cash
         </article>
         <article className='change grey medium'>Today's Change</article>

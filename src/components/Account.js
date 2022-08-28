@@ -28,15 +28,18 @@ function Account({ props }) {
   };
 
   return (
-    <article className='account__container'>
-      <header className='account__title blue bold'>
-        {name}-{displayId()}
-      </header>
-      <section className='cash_change__container'>
-        <div className='account__cash'>${cash}</div>
-        {displayChange()}
-      </section>
-    </article>
+    <>
+      <article className='account__container'>
+        <header className='account__title blue bold'>
+          {name}-{displayId()}
+        </header>
+        <section className='cash_change__container'>
+          <div className='account__cash'>${cash}</div>
+          {displayChange()}
+        </section>
+      </article>
+      <hr />
+    </>
   );
 }
 

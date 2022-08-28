@@ -88,6 +88,7 @@ function App() {
     <div className='App'>
       <main className='main__conatiner'>
         <Header onClickFn={initSortHandler} sortState={sortState} />
+        <hr />
         {displayAccounts.map((ele) => {
           return <Account key={[ele.name, ele.id]} props={ele} />;
         })}
