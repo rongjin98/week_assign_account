@@ -1,3 +1,29 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  box-sizing: border-box;
+  padding-left: 0;
+  font-size: 2.5rem;
+  /* border: 0.1rem solid black; */
+}
+
+:root {
+  --color-tan: #e1e5ea;
+  --color-white: #f0f0f0;
+  --color-blue: #277bc0;
+  --color-green: #5bb318;
+  --color-red: #e64848;
+}
+
+body {
+  background-color: var(--color-blue);
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +61,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grey-bck {
+  background-color: var(--color-tan);
+}
+
+.grey {
+  color: grey;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--color-white);
+  width: 50%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__header > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: 1;
+}
+
+.account {
+  text-align: start;
+  transform: translate(0, 50%);
+}
+
+article {
+  text-align: end;
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.account__container {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.account__container > * {
+  align-self: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
